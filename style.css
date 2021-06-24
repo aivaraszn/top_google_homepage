@@ -4,6 +4,7 @@
   font-size: 1em;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  text-transform: capitalize;
 }
 
 html {
@@ -12,7 +13,6 @@ html {
 
 a {
   color: rgba(0, 0, 0, 0.87);
-  text-transform: capitalize;
   text-decoration: none;
 }
 
@@ -31,7 +31,7 @@ a {
   justify-content: flex-end;
 }
 .nav-right > a {
-  padding: 1em;
+  padding: 0.9em;
 }
 
 .nav-text {
@@ -48,4 +48,60 @@ a {
 
 .profile-picture {
   border-radius: 50%;
+}
+
+/* main style */
+
+.logo-box{
+  position: absolute;
+  left: 50%;
+  top: 31%;
+  transform: translate(-50%, -50%);
+}
+
+.main-container {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.search-container {
+  width: 56em;
+  border: 1px solid #dfe1e5;
+  border-radius: 33em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-container>div {
+
+}
+
+.btns {
+  width: 56em;
+  text-align: center;
+}
+
+/* footer style */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.location {
+
+}
+
+.left {
+  display: inline-block;
+  float: left;
+}
+
+.right {
+  float: right;
+  display: inline-block;
 }
