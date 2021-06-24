@@ -2,10 +2,50 @@
   margin: 0;
   padding: 0;
   font-size: 1em;
-  font-family: inherit;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 html {
   font-size: 62.5%;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.87);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* nav style */
+
+.nav-bar {
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: flex-end;
+}
+.nav-right > a {
+  padding: 1em;
+}
+
+.nav-text {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.app,
+.profile,
+.profile-picture,
+.nav-text {
+  align-self: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
 }
