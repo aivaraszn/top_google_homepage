@@ -196,14 +196,20 @@ input {
 }
 
 .left-links {
-  float: right;
+  float: left;
   width: 85%;
-  display: flex;
-  justify-content: space-evenly;
+}
+
+.left-links>a {
+  padding-left: 50px;
 }
 
 .right-links {
   width: 85%;
-  display: flex;
-  justify-content: space-evenly;
+  float: right;
+  text-align: right;
+}
+
+.right-links>a {
+  padding-right: 50px;
 }
