@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 input {
   border-style: none;
   background: none;
@@ -45,6 +49,7 @@ input {
 }
 
 .app,
+.app-icon,
 .profile,
 .profile-picture,
 .nav-text {
@@ -53,6 +58,11 @@ input {
 
 .app {
   color: #5f6368;
+}
+
+.app:hover {
+  border-radius: 50%;
+  background-color: rgb(60,64,67,0.08)
 }
 
 .profile-picture {
@@ -161,12 +171,39 @@ input {
 }
 
 .location {
+  padding: 15px 0;
+  font-size: 1.5em;
+  padding-left: 30px;
+  border-bottom: 1px solid #dadce0;
+  color: rgba(0,0,0,.54);
 }
 
-.left {
-  float: left;
+.links {
+  padding: 14px 0;
+  width: 100%;
+  display: flex;
 }
 
+.left,
 .right {
+  width: 50%;
+}
+
+.left-links>a,
+.right-links>a {
+  color: #70757a;
+  font-size: 1.4em;
+}
+
+.left-links {
   float: right;
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.right-links {
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
 }
